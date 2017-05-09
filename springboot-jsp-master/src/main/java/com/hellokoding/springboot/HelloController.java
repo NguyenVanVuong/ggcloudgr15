@@ -31,9 +31,12 @@ public class HelloController {
     @RequestMapping("/edit")
     public String editPage(Model model, @RequestParam(value="name", required=false, defaultValue="World") String name) throws Exception {
 
-
+        try{
     	query get = new query();
     	String data = get.getData();
+	}
+	    catch(Exception e){
+	    }
       
         model.addAttribute("name",data);
    
