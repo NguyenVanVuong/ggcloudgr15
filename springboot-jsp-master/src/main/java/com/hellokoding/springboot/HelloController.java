@@ -18,13 +18,7 @@ public class HelloController {
     
         return "index";
     }
-    
-    @RequestMapping("/vidu")
-    public String viduPage() {
-    	query get = new query();
-    	 get.setData("haah");
-        return "edit";
-    }
+
     
     
     
